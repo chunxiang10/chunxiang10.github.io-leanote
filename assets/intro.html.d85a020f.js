@@ -1,0 +1,1 @@
+import{_ as t}from"./_plugin-vue_export-helper.cdc0426e.js";import{o,c,a as e,b as n}from"./app.c3d12cb1.js";const r={},s=e("p",null,[n("不太擅长个人介绍"),e("sup",null,"_")],-1),_=[s];function a(l,i){return o(),c("div",null,_)}const m=t(r,[["render",a],["__file","intro.html.vue"]]);export{m as default};

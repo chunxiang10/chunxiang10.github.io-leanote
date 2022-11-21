@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper.cdc0426e.js";import{o as t,c as s,a as o}from"./app.c3d12cb1.js";const c={},n=o("p",null,"暂无",-1),_=[n];function r(a,l){return t(),s("div",null,_)}const m=e(c,[["render",r],["__file","Fitness.html.vue"]]);export{m as default};
