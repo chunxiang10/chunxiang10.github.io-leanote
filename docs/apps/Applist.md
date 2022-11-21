@@ -13,6 +13,8 @@ Windows 自用软件，以开源软件为主。
 
 清单日记：Logseq & 滴答清单 & 桌面日历 & Habitify ~~& Workflowy & Trello~~
 
+你的一天：模块化日记
+
 记忆复习：[SuperMemo](https://github.com/L-M-Sherlock/sm18-lazy-package/releases/tag/1.1.3) & [kopia](https://github.com/kopia/kopia)(备份) ~~& Anki~~
 
 文本编辑：Visual Studio Code & Notepad++ & [MarkText](https://github.com/marktext/marktext) & HbuilderX & WPS & office tab ~~& Slide & 方方格子 & Typora & Yu Writer & UltraEdit~~
