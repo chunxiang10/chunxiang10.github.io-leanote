@@ -49,13 +49,30 @@ jobs:
 
       ### 没有服务器的话，请删除本区块代码，防止报错 ###
       # 将页面推送到服务器，timeout 时间从默认的 1 分钟调整到 10 分钟。
-      - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@4.3.2
-        with:
-          local-dir: docs/.vuepress/dist/
-          server: ${{ secrets.ftp_host }}
-          username: ${{ secrets.ftp_username }}
-          password: ${{ secrets.ftp_password }}
-          port: ${{ secrets.ftp_port }} # 建议更改默认的 21 端口
-          timeout: 600000
+      # - name: 📂 Sync files
+      #   uses: SamKirkland/FTP-Deploy-Action@4.3.2
+      #   with:
+      #     local-dir: docs/.vuepress/dist/
+      #     server: ${{ secrets.ftp_host }}
+      #     username: ${{ secrets.ftp_username }}
+      #     password: ${{ secrets.ftp_password }}
+      #     port: ${{ secrets.ftp_port }} # 建议更改默认的 21 端口
+      #     timeout: 600000
       ### 没有服务器的话，请删除本区块代码，防止报错 ###
+#将页面更新到 Vercel
+      - name: Copy file to Vercel
+        if: always()
+        uses: andstor/copycat-action@v3
+        with:
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          src_path: /.
+          dst_path: /
+          # 你的用户名
+          dst_owner: chunxiang10
+          # 与 Vercel 链接的仓库名，也就是 Vercel 部署时新建的仓库
+          dst_repo_name: chunxiang10.github.io
+          dst_branch: main
+          src_branch: gh-pages
+          clean: true
+
+
